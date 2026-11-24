@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VibeHelm: one window for your coding agents</title>
+  <meta name="description" content="VibeHelm runs Claude Code, Codex, OpenCode, Antigravity, Cline and MiniMax MCode side by side on Windows, and shows which one needs you. In alpha, from Datum Foundry Nine.">
+  <meta property="og:title" content="VibeHelm">
+  <meta property="og:description" content="One window for your coding agents. In alpha on Windows.">
+  <meta property="og:image" content="https://vibehelm.co.uk/img/vibe-code.webp">
+  <meta name="theme-color" content="#101a24">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="wrap top-inner">
+      <a class="brand" href="#" aria-label="VibeHelm home">
+        <span class="badge" aria-hidden="true">VH</span>
+        <span class="wordmark">VibeHelm</span>
+      </a>
+      <nav class="nav" aria-label="Main">
+        <a href="#modes">What's in it</a>
+        <a href="#status">Status</a>
+        <a class="btn btn-small" href="mailto:hello@datumfoundrynine.co.uk?subject=VibeHelm">Get in touch</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero wrap">
+      <p class="pill"><span class="dot" aria-hidden="true"></span> VibeHelm 2 · alpha · Windows</p>
+      <h1>One window for your coding agents.</h1>
+      <p class="lead">
+        Run Claude Code, Codex, OpenCode, Antigravity, Cline and MiniMax MCode side by side in real terminals,
+        each on its own project folder. VibeHelm shows which agent is working, which has finished and which is waiting for you.
+      </p>
+      <div class="cta">
+        <a class="btn" href="mailto:hello@datumfoundrynine.co.uk?subject=VibeHelm%20early%20access">Ask about early access</a>
+        <a class="btn btn-ghost" href="#modes">See what's in it</a>
+      </div>
+      <figure class="shot shot-hero">
+        <img src="img/vibe-code.webp" width="1600" height="900"
+             alt="VibeHelm Vibe Code mode: six agents in a grid of terminals, an agent list with each agent's state, and the Coordinator panel">
+      </figure>
+    </section>
+
+    <section id="modes" class="wrap section">
+      <h2>What's in it today</h2>
+      <p class="section-lead">Everything below is in the current alpha build. Screenshots are from the app with demo data.</p>
+
+      <div class="feature">
+        <div class="feature-text">
+          <h3>Vibe Code</h3>
+          <p>Any number of agents in a grid you can split, stack and rearrange. Each card shows the client, the folder, its state and how long it has been in it.</p>
+          <ul class="ticks">
+            <li>States come from the clients' own status reports, shown with an icon and a word, not just a colour</li>
+            <li>A Windows notification when an agent needs you, finishes or fails</li>
+            <li>Closing VibeHelm stops every client. Reopening resumes each conversation</li>
+            <li>Save sets of agents as workspaces and switch between them</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="feature">
+        <div class="feature-text">
+          <h3>The Coordinator</h3>
+          <p>Ask what everyone is doing and get a plain answer. Ask it to pass an instruction to an agent and it drafts the message for you to check before it is sent.</p>
+        </div>
+      </div>
+
+      <div class="feature feature-split">
+        <div class="feature-text">
+          <h3>Focus view</h3>
+          <p>Hide everything except the terminals when you want the full screen for the work, with a slim bar that still tells you who needs you.</p>
+        </div>
+        <figure class="shot">
+          <img src="img/focus-view.webp" width="1600" height="900" loading="lazy"
+               alt="Focus view: six terminals filling the screen with a thin status bar along the top">
+        </figure>
+      </div>
+
+      <div class="feature feature-split reverse">
+        <div class="feature-text">
+          <h3>Collab</h3>
+          <p>Plan a product in small increments and hand tasks to agents. Each task moves across a board from Shape to Verified, and nothing counts as done until a separate QA check has passed it.</p>
+        </div>
+        <figure class="shot">
+          <img src="img/collab.webp" width="1600" height="900" loading="lazy"
+               alt="Collab board with columns Shape, Ready, Working, Returned, Failed, Verified and Parked">
+        </figure>
+      </div>
+
+      <div class="feature feature-split">
+        <div class="feature-text">
+          <h3>Benchmark <span class="tag tag-test">In testing</span></h3>
+          <p>Give several agents the same frozen brief in separate folders and compare what each one produced. We use it to decide which model gets which job.</p>
+        </div>
+        <figure class="shot">
+          <img src="img/benchmark.webp" width="1600" height="900" loading="lazy"
+               alt="Benchmark setup: a library of four briefs and a list of agents with effort and working folder settings">
+        </figure>
+      </div>
+    </section>
+
+    <section class="wrap section">
+      <h2>Coming soon</h2>
+      <p class="section-lead">These are in progress and not in the current build yet.</p>
+      <div class="cards">
+        <article class="card">
+          <h3>Indie Studio <span class="tag">Coming soon</span></h3>
+          <p>A small game team of agents with a producer, designers and QA, working from one plan. It runs today as a separate app and is being brought into VibeHelm.</p>
+        </article>
+        <article class="card">
+          <h3>Studio <span class="tag">Coming soon</span></h3>
+          <p>Record and narrate what your agents are doing, for devlogs and demos.</p>
+        </article>
+        <article class="card">
+          <h3>Face Off <span class="tag">Coming soon</span></h3>
+          <p>Two agents, one brief, shown side by side as they work.</p>
+        </article>
+        <article class="card">
+          <h3>Deadline <span class="tag">Coming soon</span></h3>
+          <p>A time-boxed room for jams and sprints, with the plan in every agent's briefing.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="status" class="wrap section status">
+      <h2>Where it's up to</h2>
+      <dl class="facts">
+        <div><dt>Platform</dt><dd>Windows 10 and 11, portable app</dd></div>
+        <div><dt>Stage</dt><dd>Alpha, used daily in-house</dd></div>
+        <div><dt>Release</dt><dd>Planned for 2027</dd></div>
+        <div><dt>Your keys</dt><dd>Works with the subscriptions and API keys you already have</dd></div>
+      </dl>
+      <p>If you'd like to try it early or talk about it, email <a href="mailto:hello@datumfoundrynine.co.uk?subject=VibeHelm">hello@datumfoundrynine.co.uk</a>.</p>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap foot-inner">
+      <p>VibeHelm is made by <a href="https://datumfoundrynine.co.uk">Datum Foundry Nine</a>, Southampton.</p>
+      <p class="muted">Claude Code, Codex, OpenCode, Antigravity, Cline and MiniMax MCode are trademarks of their owners. VibeHelm is not affiliated with them.</p>
+    </div>
+  </footer>
+</body>
+</html>
